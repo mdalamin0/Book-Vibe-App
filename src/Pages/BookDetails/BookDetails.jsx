@@ -14,7 +14,7 @@ const BookDetails = () => {
     addBookToLocalStorage("wishBooks", id)
   }
   return (
-    <div className='flex flex-col md:flex-row items-center gap-10 my-13'>
+    <div className='flex flex-col md:flex-row items-center gap-10 mt-6 mb-10'>
       <div className='md:w-1/2 bg-base-200 rounded-xl p-18'>
         <img src={image} alt="" className='md:h-[570px mx-auto rounded-xl object-cover' />
 
