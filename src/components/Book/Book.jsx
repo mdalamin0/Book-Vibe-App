@@ -1,11 +1,17 @@
 import { Star } from 'lucide-react';
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigation } from 'react-router';
 
 const Book = ({ book }) => {
+   const navigation = useNavigation();
+  const isNavigating = Boolean(navigation.location)
   const { bookId, bookName, image, author, category, rating, tags } = book;
 
+
+
   return (
+    <>
+    {isNavigating && <span className='text-2xl font-bold text-center py-10 w-full'>Loading....</span>}
     <Link to={`/bookDetails/${bookId}`}>
     <div className="card bg-base-100  shadow-sm p-3 border border-gray-200">
       <figure className='bg-base-200 py-10 rounded-xl'>
@@ -33,6 +39,7 @@ const Book = ({ book }) => {
       </div>
     </div>
     </Link>
+    </>
   );
 };
 

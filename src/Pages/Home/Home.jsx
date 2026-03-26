@@ -6,6 +6,7 @@ import { useLoaderData } from 'react-router';
 
 const Home = () => {
   const booksData = useLoaderData();
+ 
   return (
     <div>
      <Banner/>

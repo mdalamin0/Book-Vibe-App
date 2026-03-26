@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const ListedBookCard = ({ book }) => {
   const { bookId, bookName, author, image, tags, yearOfPublishing, publisher, totalPages, category, rating } = book;
   return (
-    <div className='flex flex-col md:flex-row items-center gap-4 md:gap-6 lg:gap-10 border border-gray-400 rounded-xl p-4 my-5'>
+    <div className='flex flex-col md:flex-row items-center gap-4 md:gap-6 lg:gap-10 border border-gray-200 rounded-xl p-4 my-5'>
       <div className='bg-base-200 p-8 rounded-xl h-[230px] '>
         <img src={image} alt="book" className='w-32 object-cover h-[172px]' />
       </div>
